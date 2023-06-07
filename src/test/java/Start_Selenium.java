@@ -20,7 +20,7 @@ public class Start_Selenium
     @Test
     public void test()
     {
-        //Old strategies
+        //Old strategies CW_04
     wd.findElement(By.tagName("a"));
     wd.findElement(By.cssSelector("a"));
 
@@ -37,6 +37,15 @@ public class Start_Selenium
     wd.findElement(By.cssSelector("[href*='og']"));
     wd.findElement(By.cssSelector("[href^='/log']"));
     wd.findElement(By.cssSelector("[href$='gin']"));
+
+    //HW_04 Task 1
+    wd.findElement(By.cssSelector("[href='/about']"));
+    wd.findElement(By.cssSelector("[href*='bou']"));
+    wd.findElement(By.cssSelector("[href^='/abo']"));
+    wd.findElement(By.cssSelector("[href$='ut']"));
+
+    //HW_04 Task 2
+
 
     }
 
