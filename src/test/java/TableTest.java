@@ -30,6 +30,9 @@ public class TableTest
         }
         System.out.println("Amount of the table rows is - " + rowCount);
 
+        //System.out.println(wd.findElements(By.cssSelector("#customers tr")).size());
+
+
         // print amount of table columns
         WebElement tableCol = wd.findElement(By.cssSelector("#customers"));
         WebElement firstRow = tableCol.findElement(By.tagName("tr"));
@@ -40,14 +43,18 @@ public class TableTest
         }
         System.out.println("Amount of the table columns is - " + columnsCount);
 
+        //System.out.println(wd.findElements(By.cssSelector("#customers th")).size());
+
         // find locator for the row3
         wd.findElement(By.cssSelector("#customers tr:nth-child(3)"));
         // find locator for the last column
-        wd.findElement(By.cssSelector("#customers tr th:last-child"));
+        wd.findElement(By.cssSelector("#customers td:last-child"));
+
     }
 
     @AfterMethod
     public void tearDown()
+
     {
         wd.quit();
     }
