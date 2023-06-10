@@ -44,7 +44,11 @@ public class Start_Selenium
     wd.findElement(By.cssSelector("[href^='/abo']"));
     wd.findElement(By.cssSelector("[href$='ut']"));
 
-    //HW_04 Task 2
+    //HW_05 Task 1
+    wd.findElement(By.xpath("//a[2]"));
+    wd.findElement(By.xpath("//*[text()='ABOUT']"));
+    wd.findElement(By.xpath("//*[@href='/about']"));
+    wd.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/a[2]"));
 
 
     }
